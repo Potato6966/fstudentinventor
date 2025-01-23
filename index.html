@@ -367,6 +367,12 @@ Pac-Man is an action maze chase video game; the player controls the eponymous ch
       
         Credit: Syrxtyfv
       </div>
+		<button onclick="loadMinecraft()">Temple Run 2 🏃‍♂️</button>
+      <div class="game-description">
+      The objective is to run as far as possible, collecting coins and avoiding obstacles. Players can earn achievements, unlock characters, and upgrade power-ups while the games get faster and more challenging over time. There's no predefined endpoint; the aim is to achieve high scores and compete on leaderboards.
+      
+        Credit: Syrxtyfv
+      </div>
 	<button onclick="loadBBapp()">Block Blast ⏹️</button>
       <div class="game-description">
       Block Blast is a fun and addictive puzzle game where players strategically place colorful block pieces on a grid to create complete rows or columns. Once completed, the rows or columns disappear, earning points and freeing up space for new blocks.
@@ -408,6 +414,11 @@ Pac-Man is an action maze chase video game; the player controls the eponymous ch
     function loadChatGPT() {
             localStorage.setItem("lastPlayed", "ChatGPT");
 			window.location.href = "ChatGPT/index.html";
+		}
+		
+function loadTempleRun() {
+            localStorage.setItem("lastPlayed", "Temple Run 2");
+			window.location.href = "templerun/index.html";
 		}
     
     function loadMinecraft() {
