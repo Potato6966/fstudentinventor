@@ -197,7 +197,7 @@
     </div>
 
     <div class="game-entry">
-      <button onclick="loadSlope()">Slope Game ⚽</button>
+      <button onclick="window.location.href='https://potato6966.github.io/Syrxty-Minecraft/web/';">Slope Game ⚽</button>
       <div class="game-description">Roll the ball down endlessly! Credit: Syrxty</div>
     </div>
 
@@ -220,6 +220,12 @@
       <button onclick="loadBBapp()">Block Blast ⏹️</button>
       <div class="game-description">Match rows or columns of blocks. Credit: Syrxty</div>
     </div>
+
+    <div class="game-entry">
+  <button onclick="loadTetrisGame()">Tetris 🎮</button>
+  <div class="game-description">Stack the blocks and clear lines. Classic puzzle fun! Credit: Syrxty</div>
+</div>
+    
   </section>
 
   <div class="content">
@@ -238,6 +244,9 @@
     }
 
     function loadSnakeGame() { loadGame("Snake Game", "Snake Game/SnakeGame.html"); }
+    function loadTetrisGame() {
+      window.location.href = "https://potato6966.github.io/tetris/";
+    }
     function loadMoneyTycoonGame() { loadGame("Money Tycoon Game", "Money Tycoon Game/MoneyTycoonGame.html"); }
     function loadPaintingGame() { loadGame("Painting Game", "Painting Game/PaintingGame.html"); }
     function loadBreakoutGame() { loadGame("Breakout Game", "Breakout Game/BreakoutGame.html"); }
