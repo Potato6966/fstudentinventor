@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SYRXTYFV Game Hub 🎮</title>
+  <title>Syrxty Game Hub 🎮</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="refresh" content="4">
   <link rel="icon" type="image/png" href="https://download.logo.wine/logo/Google_Drive/Google_Drive-Logo.wine.png">
@@ -42,43 +42,38 @@
       align-items: center;
     }
 
+    .game-entry {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin: 10px;
+      background-color: rgba(255,255,255,0.1);
+      padding: 10px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 800px;
+    }
+
     button {
-      background-color: #4CAF50; /* Green */
+      background-color: #4CAF50;
       color: white;
       border: none;
       padding: 12px 24px;
       font-size: 16px;
       border-radius: 8px;
-      margin: 10px;
       cursor: pointer;
       transition: background-color 0.3s, transform 0.2s;
     }
 
     button:hover {
-      background-color: #388E3C; /* Darker Green */
+      background-color: #388E3C;
       transform: scale(1.05);
     }
 
     .game-description {
-      opacity: 0;
-      position: absolute;
-      top: 70%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: rgba(255, 255, 255, 0.95);
-      padding: 15px;
-      border-radius: 5px;
-      font-size: 18px;
-      color: #333;
-      transition: all 0.3s;
-      z-index: 1;
-      width: 80%;
-      max-width: 500px;
-      text-align: center;
-    }
-
-    button:hover + .game-description {
-      opacity: 1;
+      color: #fff;
+      font-size: 16px;
+      max-width: 60%;
     }
 
     .text_shadows {
@@ -101,9 +96,7 @@
       10% { text-shadow: 3px 3px 0 #2643c5; }
       20% { text-shadow: 3px 3px 0 #2643c5, 6px 6px 0 #1951c9; }
       30% { text-shadow: 3px 3px 0 #2643c5, 6px 6px 0 #1951c9, 9px 9px #1c3dce; }
-      40%,
-      50%,
-      60% { text-shadow: 3px 3px 0 #2643c5, 6px 6px 0 #1951c9, 9px 9px #1c3dce, 12px 12px 0 #2724ce; }
+      40%, 50%, 60% { text-shadow: 3px 3px 0 #2643c5, 6px 6px 0 #1951c9, 9px 9px #1c3dce, 12px 12px 0 #2724ce; }
       70% { text-shadow: 3px 3px 0 #2643c5, 6px 6px 0 #1951c9, 9px 9px #1c3dce; }
       80% { text-shadow: 3px 3px 0 #2643c5, 6px 6px 0 #1951c9; }
       90% { text-shadow: 3px 3px 0 #2643c5; }
@@ -125,7 +118,7 @@
 
 <body>
   <header>
-    <h1>Welcome to SYRXTYFV's Game Portal (Fullstack Developer)</h1>
+    <h1>Welcome to Syrxty's Game Portal (Fullstack Developer)</h1>
   </header>
 
   <section id="last-played">
@@ -133,62 +126,100 @@
   </section>
 
   <section class="game-selection">
-    <button onclick="loadSnakeGame()">Snake Game 🐍</button>
-    <div class="game-description">Guide the snake to eat food while avoiding collisions. Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="loadSnakeGame()">Snake Game 🐍</button>
+      <div class="game-description">Guide the snake to eat food while avoiding collisions. Credit: Syrxty</div>
+    </div>
 
-    <button onclick="loadMoneyTycoonGame()">Money Tycoon Game 💰</button>
-    <div class="game-description">Click to earn and invest to build your empire. Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="loadMoneyTycoonGame()">Money Tycoon Game 💰</button>
+      <div class="game-description">Click to earn and invest to build your empire. Credit: Syrxty</div>
+    </div>
 
-    <button onclick="loadPaintingGame()">Painting Game 🎨</button>
-    <div class="game-description">Paint on the canvas freely. Simple but fun! Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="loadPaintingGame()">Painting Game 🎨</button>
+      <div class="game-description">Paint on the canvas freely. Simple but fun! Credit: Syrxty</div>
+    </div>
 
-    <button onclick="loadBreakoutGame()">Breakout Game 🧱</button>
-    <div class="game-description">Bounce the ball to break bricks. Classic fun! Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="loadBreakoutGame()">Breakout Game 🧱</button>
+      <div class="game-description">Bounce the ball to break bricks. Classic fun! Credit: Syrxty</div>
+    </div>
 
-    <button onclick="loadHangmanGame()">Hang Man Game 🚶‍♂️</button>
-    <div class="game-description">Guess the word, or hang! Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="loadHangmanGame()">Hang Man Game 🚶‍♂️</button>
+      <div class="game-description">Guess the word, or hang! Credit: Syrxty</div>
+    </div>
 
-    <button onclick="loadCryptoApp()">Crypto Price 🤑</button>
-    <div class="game-description">Real-time crypto prices with explanations. Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="loadCryptoApp()">Crypto Price 🤑</button>
+      <div class="game-description">Real-time crypto prices with explanations. Credit: Syrxty</div>
+    </div>
 
-    <button onclick="loadPacManApp()">PacMan 👻</button>
-    <div class="game-description">Eat dots, avoid ghosts. The legend lives on. Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="loadPacManApp()">PacMan 👻</button>
+      <div class="game-description">Eat dots, avoid ghosts. The legend lives on. Credit: Syrxty</div>
+    </div>
 
-    <button onclick="loadPongGame()">Pong Game 🏓</button>
-    <div class="game-description">Classic table tennis duel. Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="loadPongGame()">Pong Game 🏓</button>
+      <div class="game-description">Classic table tennis duel. Credit: Syrxty</div>
+    </div>
 
-    <button onclick="loadWeatherapp()">Weather App ☁</button>
-    <div class="game-description">Forecasts, temps, and more in your area. Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="loadWeatherapp()">Weather App ☁</button>
+      <div class="game-description">Forecasts, temps, and more in your area. Credit: Syrxty</div>
+    </div>
 
-    <button onclick="loadBulleyeGame()">Bulleye Game 🏹</button>
-    <div class="game-description">Hit the bullseye for high scores. Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="loadBulleyeGame()">Bulleye Game 🏹</button>
+      <div class="game-description">Hit the bullseye for high scores. Credit: Syrxty</div>
+    </div>
 
-    <button onclick="loadHighwayGame()">Highway Race 🚗</button>
-    <div class="game-description">Dodge cars and race to win. Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="loadHighwayGame()">Highway Race 🚗</button>
+      <div class="game-description">Dodge cars and race to win. Credit: Syrxty</div>
+    </div>
 
-    <button onclick="loadMenjaGame()">Menja Game ⬜</button>
-    <div class="game-description">Cut the blocks for XP! Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="loadMenjaGame()">Menja Game ⬜</button>
+      <div class="game-description">Cut the blocks for XP! Credit: Syrxty</div>
+    </div>
 
-    <button onclick="window.location.href='https://solarsystem-lac.vercel.app';">Solar System 🌍</button>
-    <div class="game-description">Explore the sun, planets, and more. Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="window.location.href='https://solarsystem-lac.vercel.app';">Solar System 🌍</button>
+      <div class="game-description">Explore the sun, planets, and more. Credit: Syrxty</div>
+    </div>
 
-    <button onclick="loadFlappyBird()">Flappy Bird 🐦</button>
-    <div class="game-description">Tap to fly, avoid the pipes. Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="loadFlappyBird()">Flappy Bird 🐦</button>
+      <div class="game-description">Tap to fly, avoid the pipes. Credit: Syrxty</div>
+    </div>
 
-    <button onclick="loadSlope()">Slope Game ⚽</button>
-    <div class="game-description">Roll the ball down endlessly! Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="loadSlope()">Slope Game ⚽</button>
+      <div class="game-description">Roll the ball down endlessly! Credit: Syrxty</div>
+    </div>
 
-    <button onclick="loadSS()">Subway Surfer 🏃‍♂️</button>
-    <div class="game-description">Endless runner dodging action. Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="loadSS()">Subway Surfer 🏃‍♂️</button>
+      <div class="game-description">Endless runner dodging action. Credit: Syrxty</div>
+    </div>
 
-    <button onclick="loadMinecraft()">Minecraft ⛏️</button>
-    <div class="game-description">Build, mine, survive. Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="loadMinecraft()">Minecraft ⛏️</button>
+      <div class="game-description">Build, mine, survive. Credit: Syrxty</div>
+    </div>
 
-    <button onclick="loadTempleRun()">Temple Run 2 🏃‍♂️</button>
-    <div class="game-description">Run endlessly and avoid danger. Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="loadTempleRun()">Temple Run 2 🏃‍♂️</button>
+      <div class="game-description">Run endlessly and avoid danger. Credit: Syrxty</div>
+    </div>
 
-    <button onclick="loadBBapp()">Block Blast ⏹️</button>
-    <div class="game-description">Match rows or columns of blocks. Credit: Syrxtyfv</div>
+    <div class="game-entry">
+      <button onclick="loadBBapp()">Block Blast ⏹️</button>
+      <div class="game-description">Match rows or columns of blocks. Credit: Syrxty</div>
+    </div>
   </section>
 
   <div class="content">
