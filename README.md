@@ -1,1 +1,1 @@
-# game
+# Just a sigma game
